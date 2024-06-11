@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdravý Životní Styl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #00a4cc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005c8a;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #007ba7;
+        }
+        section {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content > div {
+            width: 30%;
+            margin: 10px;
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .content > div:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            text-align: center;
+            color: #005c8a;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #00a4cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #007ba7;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #00a4cc;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vítejte na Stránce o Zdravém Životním Stylu</h1>
+    </header>
+    <nav>
+        <a href="#aktivity">Aktivity</a>
+        <a href="#jidelnicky">Jídelníčky</a>
+        <a href="#pristroje">Přístroje</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <section id="aktivity">
+        <h2>Aktivity</h2>
+        <div class="content">
+            <div>
+                <h3>Ranní Cvičení</h3>
+                <p>Začněte svůj den energetickým cvičením, které vám pomůže rozproudit krev a připravit vás na aktivní den.</p>
+            </div>
+            <div>
+                <h3>Jóga</h3>
+                <p>Uvolněte své tělo a mysl pomocí jógy. Skvělý způsob, jak se zbavit stresu a posílit své tělo.</p>
+            </div>
+            <div>
+                <h3>Běhání</h3>
+                <p>Běhání je skvělý způsob, jak zlepšit svou kondici a zároveň si užít přírodu a čerstvý vzduch.</p>
+            </div>
+        </div>
+    </section>
+    <section id="jidelnicky">
+        <h2>Jídelníčky</h2>
+        <div class="content">
+            <div>
+                <h3>Snídaně</h3>
+                <p>Zdravá snídaně je základ úspěšného dne. Vyberte si z našich tipů na výživné a chutné snídaně.</p>
+            </div>
+            <div>
+                <h3>Obědy</h3>
+                <p>Oběd by měl být výživný a zároveň lehký, aby vám dodal energii na odpolední aktivity.</p>
+            </div>
+            <div>
+                <h3>Večeře</h3>
+                <p>Lehká a zdravá večeře je klíčem k dobrému spánku a regeneraci těla po náročném dni.</p>
+            </div>
+        </div>
+    </section>
+    <section id="pristroje">
+        <h2>Přístroje pro Zlepšení Zdraví</h2>
+        <div class="content gallery">
+            <div>
+                <img src="https://via.placeholder.com/300x200?text=Fitness+Tracker" alt="Fitness Tracker">
+                <h3>Fitness Tracker</h3>
+                <p>Sledujte své denní aktivity a získejte přehled o tom, jak aktivní jste.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300x200?text=Jóga+Mat" alt="Jóga Mat">
+                <h3>Jóga Mat</h3>
+                <p>Nezbytná pomůcka pro každého, kdo chce začít s jógou.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300x200?text=Meditation+Cushion" alt="Meditation Cushion">
+                <h3>Meditation Cushion</h3>
+                <p>Skvělá pomůcka pro pohodlné sezení během meditace.</p>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <form class="form-group">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" placeholder="Vaše jméno">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Váš e-mail">
+            
+            <label for="message">Zpráva:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Vaše zpráva"></textarea>
+            
+            <button type="submit">Odeslat</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Zdravý Životní Styl. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
+
